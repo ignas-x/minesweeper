@@ -1,0 +1,138 @@
+/*
+body {
+	background-color: #ddd;
+}
+*/
+
+
+.minefield {
+	outline: 10px solid #888;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #999;
+	border-collapse: collapse; 
+	empty-cells:show;
+	border-spacing: 1;
+}
+
+.gameover{
+	outline: 10px solid red;	
+}
+.gamecompleted{
+	outline: 10px solid green;	
+}
+
+.minefield td {
+	background-color: #ccc; 
+	border: 1px solid #999;
+	width: 25px;
+	height: 25px;
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	position: relative;
+	/*z-index: -1;*/
+	background-clip: padding-box;
+}
+
+.btn-sweep-base { 
+	border-color: #ccc; 
+	border-color: #000; 
+	background-color: #e4e4e4;
+	border-radius: 2px;
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100; 
+	opacity: 1;
+	font-weight: bold;
+}
+
+.xray{
+	opacity: 0.7;	
+}
+
+.btn-sweep-base:hover { 
+	/* border-color: #905; */
+	background-color: #fff;
+}
+
+.question{
+	font-size: 16px; 
+	position:relative; 
+	top:-2px; 
+	left:1px;
+}
+
+.red{color: red;}
+.blue{color: blue;}
+.green{color: #007b00;}
+.darkblue{color: #00007b;}
+.purple{color: #7b0000;}
+
+
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+
+
+/* FORMS / BUTTONS */
+.width90{
+width: 90px;
+}
+
+#helpbutton, #newbutton{
+	margin: 10px;
+	width: 110px;	
+}
+
+.buttons-wrap{
+	background-color: #aaa;
+	padding: 10px;
+}
+
+.checkbox{
+	position: fixed;
+	bottom: 20px;
+	right: 20px; 
+	padding-left: 105px;
+}
+
+#GameOverModal{
+	background-color: red;
+}
+
+#GameCompletedModal{
+	background-color: green;
+}
+
+.progress-bar.animate {
+   width: 70%;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
